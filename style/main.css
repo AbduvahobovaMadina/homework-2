@@ -1,0 +1,561 @@
+@font-face{
+    font-family: Orbitron-Bold;
+    src: url(../fonts/Orbitron-Bold.woff);
+}
+@font-face {
+    font-family: Orbitron-Regular;
+    src: url(../fonts/Orbitron-Regular.woff);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    min-height: 400vh;
+}
+.container{
+    width: 100%;
+    max-width: 1248px;
+    padding: 0 16px;
+    margin: auto;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    text-align: inherit;
+}
+.header{
+    width: 100%;
+    position: absolute;
+
+}
+.navbar{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 92px;
+    padding-left: 60px;
+    padding-right: 40px;
+}
+.navbar__logo{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+} 
+.navbar__logo h2{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Orbitron-Bold;
+    padding-top: 9px
+}
+.rect{
+    width: 5.5px;
+    height: 5.5px;
+    padding-top:19px 
+}
+.navbar__collection{
+    display: flex;
+    color: white;
+    gap: 40px;
+    list-style: none;
+} 
+.navbar__item{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Orbitron-Regular;
+}
+.navbar__item:hover{
+    color: orange;
+    cursor: pointer;
+}  
+.navbar__contact{
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+}
+.navbar__contact input{
+    outline: none;
+    font-family: Orbitron-Regular;
+    text-align: center;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    color: white;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.banner{
+    width: 50%;
+    height: 1069px;
+    display: flex;
+    flex-direction: column;
+    background: #040404; 
+    padding: 209px 0 0 60px ;
+    gap: 30px;
+    color: white;
+}
+.banner__title{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.banner__title p{
+    text-decoration: none;
+    color: dodgerblue;
+    font-family: Orbitron-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 12px;
+}
+.banner h2{
+    font-size: 59px;
+    font-weight: 400;
+    font-family: Orbitron-Regular;
+
+}
+.banner__btns{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.banner button{
+    width: 203px;
+    height: 70px;
+    background: black;
+    border: 1px solid royalblue;
+    font-family: Orbitron-Bold;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    transition: .05s;
+}
+.banner button:hover{
+    background-color: dodgerblue;
+    transform: translate(10px, 10px);
+}
+.main__img{
+    background: rgba(87, 184, 255, 1);
+    width: 50%;
+    height: 1069px;
+    padding: 209px 0 0 0;
+}
+.hero{
+    width: 100%;
+    background: rgba(253, 208, 74, 1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 130px;
+}
+.hero h2{
+    font-family: Orbitron-Regular;
+    font-size: 48px;
+    font-weight: 400;
+    
+}
+.hero p{
+    font-family: Orbitron-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    width: 576px;
+    height: 56px;
+}
+.hero__logo{
+    gap: 20px;
+    padding-bottom: 130px;
+}
+
+.future{
+    background-image: url(../assets/IMAGE\ \(8\).png);
+    width: 100%;
+    padding-bottom: 60px;
+}
+.future__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 130px;
+}
+.future__text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.future__text p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Orbitron-Bold;
+    color: dodgerblue;
+    cursor: pointer;
+    text-decoration: none;
+}
+.future__title h2{
+    font-size: 72px;
+    font-weight: 400;
+    font-family: Orbitron-Regular;
+    width: 50%;
+    height: 148px;
+    text-align: center;
+    color: white;
+}
+.future__title h4{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Orbitron-Regular;
+    width: 50%;
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+}
+.future__box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.future__card{
+    width: 47%;
+    height: 212px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 35px ;
+    margin-top: 63px;
+}
+.card__title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.card__title h2{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+    font-family: Orbitron-Regular;
+}
+.future__card p{
+    color: #fff;
+    font-family: Orbitron-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+
+
+.play{
+    width: 100%;
+    background: #040404;
+}
+.play__hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.play__text{
+    width: 50%;
+    height: 500px;
+    padding-top: 124px;
+}
+.play__title{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.play__title h4{
+    color: dodgerblue;
+    cursor: pointer;
+    font-family: Orbitron-Regular;
+    font-size: 16px;
+    font-weight: 400;
+}
+.play__text h2{
+    color: #fff;
+    font-family: Orbitron-Regular;
+    font-size: 55px;
+    font-weight: 400;
+}
+.play__text p{
+    color: #fff;
+    font-family: Orbitron-Regular;
+    font-size: 16px;
+    font-weight: 200;
+    margin-top: 30px;
+}
+.play__hero button{
+    background: none;
+    border:  1px solid dodgerblue;
+    color: #fff;
+    margin-top: 30px;
+    width: 203px;
+    height: 72px;
+    color: #fff;
+    font-family: Orbitron-Regular;
+    font-size: 18px;
+    font-weight: 400;
+}
+.play__hero button:hover{
+    background: dodgerblue;
+    cursor: pointer;
+    color: #fff;
+    transform: translate(10px, 10px);
+}
+
+
+
+.multiplayer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.multiplayer__card{
+    background-image: url(../assets/IMAGE\ \(16\).png);
+    width: 33.3%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+    text-align: center;
+}
+.multiplayer__card img{
+    width: 128px;
+    height: 128px;
+}
+.multiplayer__card h2{
+    font-family: Orbitron-Regular;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}
+.multiplayer__card-{
+    background-image: url(../assets/IMAGE\ \(17\).png);
+    width: 33.3%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+    text-align: center;
+}
+.multiplayer__card- img{
+    width: 128px;
+    height: 128px;
+}
+.multiplayer__card- h2{
+    font-family: Orbitron-Regular;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}
+.multiplayer__card--{
+    background-image: url(../assets/IMAGE\ \(18\).png);
+    width: 33.3%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+    text-align: center;
+}
+.multiplayer__card-- img{
+    width: 128px;
+    height: 128px;
+}
+.multiplayer__card-- h2{
+    font-family: Orbitron-Regular;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+
+.menu{
+    width: 100%;
+    background: #040404;
+    padding-bottom:60px ;
+}
+
+.menu__about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.menu__title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+.menu__title-{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.menu__title--{
+    gap: 20px;
+}
+.menu__title h4{
+    color: dodgerblue;
+    cursor: pointer;
+    font-family: Orbitron-Regular;
+    font-size: 16px;
+    font-weight: 400;
+}
+.menu__title h2{
+    font-family: Orbitron-Regular;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 40px;
+}
+.menu__title button{
+    background: none;
+    border:  1px solid dodgerblue;
+    color: #fff;
+    margin-top: 30px;
+    width: 203px;
+    height: 72px;
+    color: #fff;
+    font-family: Orbitron-Regular;
+    font-size: 18px;
+    font-weight: 400;
+}
+.menu__title button:hover{
+    background: dodgerblue;
+    cursor: pointer;
+    color: #fff;
+    transform: translate(10px, 10px);
+}
+.menu__picture{
+    width: 50%;
+    height: 500px;
+}
+.menu__picture img{
+    margin-top: 40px;
+}
+.menu__picture h4{
+    color: dodgerblue;
+    cursor: pointer;
+    font-family: Orbitron-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+.menu__picture p{
+    color: #fff;
+    font-family: Orbitron-Regular;
+    font-size: 32px;
+    font-weight: 400;  
+}
+.menu__box{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 45%;
+    
+}
+.menu__card{
+    width: 270px;
+    height: 321px;
+    
+}
+.menu__card h4{
+    color: dodgerblue;
+    cursor: pointer;
+    font-family: Orbitron-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 30px;
+    
+}
+.menu__card p{
+    color: #fff;
+    font-family: Orbitron-Regular;
+    font-size: 18px;
+    font-weight: 400;  
+}
+
+
+.end{
+    background-image: url(../assets/IMAGE\ \(27\).png);
+    width: 100%;
+}
+.end--{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.end h2{
+    font-family: Orbitron-Regular;
+    font-size: 64px;
+    font-weight: 700;
+    color: #040404;
+    text-align: center;
+    max-width: 50%;
+    max-height: 120px;
+}
+.end p{
+    margin-top: 160px ;
+    color: #0e0e0e;
+    font-family: Orbitron-Regular;
+    font-size: 18px;
+    font-weight: 400;  
+    text-align: center;
+    max-width: 45%;
+    max-height: 120px;
+    margin-bottom: 120px;
+}
+.send{
+    margin-bottom: 140px;
+}
+.send input{
+    outline: none;
+    width: 445px;
+    height: 70px;
+    padding-left: 20px;
+    font-family: Orbitron-Regular;
+    font-size: 18px;
+    font-weight: 400;
+}
+.send button{
+    background: dodgerblue;
+    border: none;
+    color: #fff;
+    font-family: Orbitron-Regular;
+    font-size: 18px;
+    font-weight: 400;
+    width: 190px;
+    height: 70px;
+    cursor: pointer;
+}
+.send button:hover{
+    background: dodgerblue;
+    cursor: pointer;
+    color: #fff;
+    transform: translate(10px, 10px);
+}
